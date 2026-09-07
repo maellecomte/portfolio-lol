@@ -1,0 +1,586 @@
+   <!DOCTYPE html>
+<html lang="fr">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Portfolio BTS SIO SLAM — Mael Lecomte, développement et administration système.">
+   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%23010a13' width='32' height='32' rx='4'/%3E%3Cpath fill='%23c8aa6e' d='M16 6l8 10-8 10-8-10z'/%3E%3C/svg%3E" type="image/svg+xml">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+   <link rel="stylesheet" href="assets/css/styles.css">
+   <title>Mael Lecomte - Portfolio BTS SIO SLAM</title>
+</head>
+<body>
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+      <nav class="nav container">
+         <a href="#" class="nav__logo">Mael</a>
+
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li class="nav__item">
+                  <a href="#home" class="nav__link">Accueil</a>
+               </li>
+               <li class="nav__item">
+                  <a href="#about" class="nav__link">À propos</a>
+               </li>
+               <li class="nav__item">
+                  <a href="#projects" class="nav__link">Projets</a>
+               </li>
+               <li class="nav__item">
+                  <a href="#work" class="nav__link">Parcours</a>
+               </li>
+               <li class="nav__item">
+                  <a href="#skills" class="nav__link">Compétences</a>
+               </li>
+               <li class="nav__item">
+                  <a href="#veille" class="nav__link">Veille</a>
+               </li>
+               <li class="nav__item">
+                  <a href="#contact" class="nav__link">Contact</a>
+               </li>
+            </ul>
+
+            <div class="nav__close" id="nav-close">
+               <i class="ri-close-line"></i>
+            </div>
+         </div>
+         <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+         </div>
+      </nav>
+   </header>
+
+   <!--==================== MAIN ====================-->
+   <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+         <div class="home__container container grid">
+            <div class="home__info">
+               <p class="home__greeting">Bonjour, je suis</p>
+               <h1 class="home__name">Mael <br> Lecomte</h1>
+            </div>
+
+            <div class="home__image">
+               <div class="home__blob">
+                  <img src="assets/img/my-profile-img.jpg" alt="Mael Lecomte" class="home__perfil" width="360" height="450" decoding="async" onerror="this.onerror=null;this.src='https://ui-avatars.com/api/?name=Mael+Lecomte&amp;size=400&amp;background=091428&amp;color=c8aa6e&amp;bold=true';">
+               </div>
+            </div>
+
+            <div class="home__split">
+               <p class="home__split-text">Étudiant</p>
+               <h2 class="home__profession">
+                  <span class="home__profession-1">BTS SIO</span>
+                  <span class="home__profession-2">SLAM</span>
+               </h2>
+            </div>
+
+            <div class="home__social">
+               <a href="https://www.linkedin.com/in/maellecomte/" target="_blank" rel="noopener noreferrer" class="home__social-link">
+                  <i class="ri-linkedin-box-fill"></i>
+               </a>
+               <a href="https://github.com/maellecomte" target="_blank" rel="noopener noreferrer" class="home__social-link">
+                  <i class="ri-github-fill"></i>
+               </a>
+            </div>
+
+            <a href="assets/pdf/cv.pdf" download class="home__cv">
+               CV <i class="ri-file-download-line"></i>
+            </a>
+         </div>
+      </section>
+
+      <!--==================== À PROPOS ====================-->
+      <section class="about section" id="about">
+         <h2 class="section__title">
+            À propos <br>
+            <span>de moi</span>
+         </h2>
+
+         <div class="about__container container">
+            <article class="about__panel">
+               <div class="about__panel-glow" aria-hidden="true"></div>
+               <p class="about__text">
+                  Étudiant en <b>BTS SIO option SLAM</b> à MDS Angers, passionné
+                  par le <b>développement d'applications</b> et l'administration système.
+                  En alternance chez Anjou Acheminement, je développe mes compétences
+                  en gestion de parc informatique et développement logiciel.
+               </p>
+            </article>
+         </div>
+      </section>
+
+      <!--==================== PROJECTS ====================-->
+      <section class="projects section" id="projects">
+         <h2 class="section__title">
+            Mes <br>
+            <span>Projets</span>
+         </h2>
+
+         <div class="projects__container container">
+            <div class="projects__scroll">
+
+                  <article class="projects__card" tabindex="0" role="button" aria-haspopup="dialog">
+                     <div class="projects__content">
+                        <div class="projects__number"><h1>01</h1></div>
+                        <h3 class="projects__title">Serveur</h3>
+                        <h2 class="projects__subtitle">Ubuntu <br> Serveur</h2>
+                        <p class="projects__description">Serveur Linux avec Apache, SSH, DNS et DHCP pour un réseau local.</p>
+                        <p class="projects__hint"><i class="ri-information-line" aria-hidden="true"></i> Voir le détail</p>
+                     </div>
+                     <div class="projects__detail" hidden>
+                        <h3>Contexte</h3>
+                        <p>Mise en place d’un serveur Ubuntu Server en réseau local pour héberger des sites, administrer à distance et gérer le réseau.</p>
+                        <h3>Ce que j’ai fait</h3>
+                        <ul>
+                           <li>Installation et sécurisation du système</li>
+                           <li>Configuration Apache, SSH, DNS, DHCP</li>
+                           <li>Documentation des procédures</li>
+                        </ul>
+                        <h3>Technologies</h3>
+                        <p>Linux, Ubuntu Server, Apache, OpenSSH, DNS, DHCP</p>
+                     </div>
+                  </article>
+
+                  <article class="projects__card" tabindex="0" role="button" aria-haspopup="dialog">
+                     <div class="projects__content">
+                        <div class="projects__number"><h1>02</h1></div>
+                        <h3 class="projects__title">Web</h3>
+                        <h2 class="projects__subtitle">Affichage <br> dynamique v2</h2>
+                        <p class="projects__description">Pilotage d’écrans à distance : API NestJS, frontend React, PostgreSQL, MinIO, Docker.</p>
+                        <p class="projects__hint"><i class="ri-information-line" aria-hidden="true"></i> Voir le détail</p>
+                     </div>
+                     <div class="projects__detail" hidden>
+                        <h3>Contexte</h3>
+                        <p>Application de <strong>digital signage</strong> : gestion d’écrans physiques à distance (médiathèque, playlists, planning, suivi temps réel).</p>
+                        <h3>Ce que j’ai fait</h3>
+                        <ul>
+                           <li>API backend NestJS (auth JWT, upload médias, WebSocket)</li>
+                           <li>Frontend React + TypeScript + Tailwind (dashboard, médiathèque, player kiosk)</li>
+                           <li>Stockage fichiers sur MinIO (compatible S3)</li>
+                           <li>Déploiement Docker Compose (Postgres, MinIO, Nginx)</li>
+                           <li>Heartbeat pour le suivi online/offline des écrans</li>
+                        </ul>
+                        <h3>Technologies</h3>
+                        <p>NestJS, React 18, TypeScript, Vite, Tailwind, PostgreSQL, TypeORM, MinIO, Socket.IO, Docker, Nginx</p>
+                        <a href="https://github.com/maellecomte/affichage-dynamique-v2" target="_blank" rel="noopener noreferrer" class="project-modal__github"><i class="ri-github-fill"></i> Voir sur GitHub</a>
+                     </div>
+                  </article>
+
+                  <article class="projects__card" tabindex="0" role="button" aria-haspopup="dialog">
+                     <div class="projects__content">
+                        <div class="projects__number"><h1>03</h1></div>
+                        <h3 class="projects__title">Application</h3>
+                        <h2 class="projects__subtitle">Badgeuse <br> chauffeurs</h2>
+                        <p class="projects__description">Pointage multi-sites par badge iButton sur Raspberry Pi, avec dashboard web en temps réel.</p>
+                        <p class="projects__hint"><i class="ri-information-line" aria-hidden="true"></i> Voir le détail</p>
+                     </div>
+                     <div class="projects__detail" hidden>
+                        <h3>Contexte</h3>
+                        <p>Système de <strong>pointage multi-sites</strong> pour les chauffeurs : terminal Raspberry Pi sur le terrain + application web centralisée.</p>
+                        <h3>Terminal (Raspberry Pi)</h3>
+                        <ul>
+                           <li>Lecture de badge <strong>iButton</strong> uniquement</li>
+                           <li>Interface kiosk en Python (CustomTkinter)</li>
+                           <li>Stockage local SQLite + sync auto vers l’API</li>
+                        </ul>
+                        <h3>Plateforme web</h3>
+                        <ul>
+                           <li>API FastAPI + PostgreSQL</li>
+                           <li>Frontend React + Tailwind (dashboard, live feed, gestion chauffeurs)</li>
+                           <li>Rapports Excel via n8n</li>
+                           <li>Déploiement Docker Compose</li>
+                        </ul>
+                        <h3>Technologies</h3>
+                        <p>Python, CustomTkinter, SQLite, FastAPI, React, Vite, Tailwind, PostgreSQL, Docker, n8n</p>
+                        <a href="https://github.com/maellecomte/badgeuse" target="_blank" rel="noopener noreferrer" class="project-modal__github"><i class="ri-github-fill"></i> Voir sur GitHub</a>
+                     </div>
+                  </article>
+
+                  <article class="projects__card" tabindex="0" role="button" aria-haspopup="dialog">
+                     <div class="projects__content">
+                        <div class="projects__number"><h1>04</h1></div>
+                        <h3 class="projects__title">Infrastructure</h3>
+                        <h2 class="projects__subtitle">Raspberry Pi <br> Multi-services</h2>
+                        <p class="projects__description">Serveur local : Docker, Portainer, IA (Llama 3), automatisation (n8n) et site web.</p>
+                        <p class="projects__hint"><i class="ri-information-line" aria-hidden="true"></i> Voir le détail</p>
+                     </div>
+                     <div class="projects__detail" hidden>
+                        <h3>Contexte</h3>
+                        <p>Plateforme locale sur Raspberry Pi avec plusieurs services conteneurisés accessibles sur le réseau.</p>
+                        <h3>Ce que j’ai fait</h3>
+                        <ul>
+                           <li>Installation et configuration du Pi</li>
+                           <li>Déploiement Docker + administration Portainer</li>
+                           <li>Workflows d’automatisation avec n8n</li>
+                           <li>Expérimentation IA avec Llama 3 en local</li>
+                           <li>Hébergement d’un site sur le LAN</li>
+                        </ul>
+                        <h3>Technologies</h3>
+                        <p>Raspberry Pi, Docker, Portainer, n8n, Llama 3, stack web</p>
+                     </div>
+                  </article>
+
+                  <article class="projects__card" tabindex="0" role="button" aria-haspopup="dialog">
+                     <div class="projects__content">
+                        <div class="projects__number"><h1>05</h1></div>
+                        <h3 class="projects__title">BTS SIO</h3>
+                        <h2 class="projects__subtitle">Tableau <br> E4/E5</h2>
+                        <p class="projects__description">Synthèse des compétences E4 et E5 reliées aux situations professionnelles du BTS SIO SLAM.</p>
+                        <p class="projects__hint"><i class="ri-information-line" aria-hidden="true"></i> Voir le détail</p>
+                     </div>
+                     <div class="projects__detail" hidden>
+                        <h3>Contexte</h3>
+                        <p>Document de synthèse reliant chaque compétence du BTS SIO SLAM aux projets et missions réalisés.</p>
+                        <h3>Contenu</h3>
+                        <ul>
+                           <li>Compétences officielles E4 et E5</li>
+                           <li>Lien avec les projets réalisés</li>
+                           <li>Préparation au dossier professionnel</li>
+                        </ul>
+                     </div>
+                  </article>
+
+            </div>
+
+            <div class="projects__nav" role="group" aria-label="Faire défiler les projets">
+               <button type="button" class="projects__nav-btn" id="projects-nav-prev" aria-label="Projets précédents">
+                  <svg class="projects__nav-icon" width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                     <path d="M9 2L3 9L9 16" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+               </button>
+               <button type="button" class="projects__nav-btn" id="projects-nav-next" aria-label="Projets suivants">
+                  <svg class="projects__nav-icon" width="11" height="18" viewBox="0 0 11 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                     <path d="M2 2L8 9L2 16" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+               </button>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== WORK (Parcours) ====================-->
+      <section class="work section" id="work">
+         <h2 class="section__title">
+            <span>Mon</span>
+            <br> Parcours
+         </h2>
+
+         <div class="work__container container grid">
+            <div class="work__tabs">
+               <button type="button" class="work__button work__button-active" data-target="experience">
+                  Expérience
+               </button>
+               <button type="button" class="work__button" data-target="education">
+                  Formation
+               </button>
+            </div>
+
+            <div class="work__content" id="experience">
+               <div class="work__card">
+                  <h3 class="work__title">Admin du parc <br> & Dev d'apps</h3>
+                  <p class="work__subtitle">Anjou Acheminement</p>
+                  <p class="work__year">2025 - Maintenant</p>
+                  <p class="work__description">
+                     Alternance : administration du parc informatique, développement
+                     d'applications internes et support aux utilisateurs.
+                  </p>
+               </div>
+
+               <div class="work__card">
+                  <h3 class="work__title">Gestion <br> & BDD</h3>
+                  <p class="work__subtitle">Département 49</p>
+                  <p class="work__year">2024 - 2025</p>
+                  <p class="work__description">
+                     Alternance : gestion avancée avec Excel, manipulation de bases
+                     de données.
+                  </p>
+               </div>
+
+               <div class="work__card">
+                  <h3 class="work__title">Dépannage <br> machines de test</h3>
+                  <p class="work__subtitle">Eolane Angers</p>
+                  <p class="work__year">2024</p>
+                  <p class="work__description">
+                     Stage : dépannage de machines de test industrielles,
+                     diagnostic et maintenance technique.
+                  </p>
+               </div>
+
+               <div class="work__card">
+                  <h3 class="work__title">Réparation <br> & Installation</h3>
+                  <p class="work__subtitle">PC Anjou Tiercé</p>
+                  <p class="work__year">2023</p>
+                  <p class="work__description">
+                     Stage : réparation et dépannage de PC, installation de
+                     systèmes de vidéosurveillance.
+                  </p>
+               </div>
+
+               <div class="work__card">
+                  <h3 class="work__title">Réparation <br> PC / Téléphones</h3>
+                  <p class="work__subtitle">Médiaclinic</p>
+                  <p class="work__year">2023</p>
+                  <p class="work__description">
+                     Stage : réparation de PC et téléphones, diagnostic
+                     matériel et logiciel.
+                  </p>
+               </div>
+            </div>
+
+            <div class="work__content work__content-hidden" id="education">
+               <div class="work__card">
+                  <h3 class="work__title">Certification <br> RGPD</h3>
+                  <p class="work__subtitle">Certification en ligne</p>
+                  <p class="work__year">2025</p>
+                  <p class="work__description">
+                     Certification Règlement Général sur la Protection des Données,
+                     maîtrise des enjeux de la protection des données personnelles.
+                  </p>
+               </div>
+               <div class="work__card">
+                  <h3 class="work__title">BTS SIO <br> option SLAM</h3>
+                  <p class="work__subtitle">My Digital School</p>
+                  <p class="work__year">2025 - 2027</p>
+                  <p class="work__description">
+                     BTS Services Informatiques aux Organisations, spécialité
+                     Solutions Logicielles et Applications Métiers. Formation en
+                     alternance.
+                  </p>
+               </div>
+
+               <div class="work__card">
+                  <h3 class="work__title">Bac Pro SN <br> mention Bien</h3>
+                  <p class="work__subtitle">Lycée Saint Aubin La Salle</p>
+                  <p class="work__year">2022 - 2025</p>
+                  <p class="work__description">
+                     Baccalauréat Professionnel Systèmes Numériques.
+                     Formation axée sur l'électronique, les réseaux
+                     et la maintenance informatique.
+                  </p>
+               </div>
+
+               <div class="work__card">
+                  <h3 class="work__title">Brevet des <br> Collèges</h3>
+                  <p class="work__subtitle">Collège Vallée du Loire</p>
+                  <p class="work__year">2018 - 2022</p>
+                  <p class="work__description">
+                     Diplôme National du Brevet.
+                  </p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== SKILLS (Compétences) ====================-->
+      <section class="services section" id="skills">
+         <h2 class="section__title">
+            Mes <span>Compétences</span>
+         </h2>
+
+         <div class="services__container container grid">
+            <div class="services__card">
+               <div class="services__header">
+                  <i class="ri-code-s-slash-line services__icon"></i>
+                  <h3 class="services__title">Développement</h3>
+                  <i class="ri-arrow-down-s-line services__arrow"></i>
+               </div>
+
+               <div class="services__info">
+                  <p class="services__description">
+                     Création de sites web et d'applications. Maîtrise des
+                     langages front-end et back-end, avec une approche
+                     orientée solutions.
+                  </p>
+                  <p class="services__subtitle">Langages & Outils</p>
+                  <p class="services__skills">HTML - CSS - JavaScript<br>Python - PHP<br>Git / GitHub - Docker</p>
+               </div>
+            </div>
+
+            <div class="services__card">
+               <div class="services__header">
+                  <i class="ri-server-line services__icon"></i>
+                  <h3 class="services__title">Administration Système</h3>
+                  <i class="ri-arrow-down-s-line services__arrow"></i>
+               </div>
+
+               <div class="services__info">
+                  <p class="services__description">
+                     Administration de serveurs et de parcs informatiques.
+                     Configuration réseau, virtualisation et gestion
+                     d'infrastructures.
+                  </p>
+                  <p class="services__subtitle">Langages & Outils</p>
+                  <p class="services__skills">Windows Client/Server<br>Linux Client/Server<br>Cloudflare - Cisco Packet Tracer / Filius</p>
+               </div>
+            </div>
+
+            <div class="services__card">
+               <div class="services__header">
+                  <i class="ri-tools-line services__icon"></i>
+                  <h3 class="services__title">Outils & Réseau</h3>
+                  <i class="ri-arrow-down-s-line services__arrow"></i>
+               </div>
+
+               <div class="services__info">
+                  <p class="services__description">
+                     Analyse réseau, outils de productivité et diagnostic.
+                     Capacité à résoudre des problèmes techniques
+                     complexes.
+                  </p>
+                  <p class="services__subtitle">Langages & Outils</p>
+                  <p class="services__skills">Wireshark - Suite Office<br>Cisco Packet Tracer - Filius</p>
+               </div>
+            </div>
+         </div>
+
+         <div class="soft-skills container">
+            <h3 class="soft-skills__title">Soft Skills</h3>
+            <div class="soft-skills__container">
+               <div class="soft-skills__item">
+                  <i class="ri-team-line"></i>
+                  <span>Esprit d'équipe</span>
+               </div>
+               <div class="soft-skills__item">
+                  <i class="ri-rocket-line"></i>
+                  <span>Entreprenant</span>
+               </div>
+               <div class="soft-skills__item">
+                  <i class="ri-focus-3-line"></i>
+                  <span>Assidu</span>
+               </div>
+               <div class="soft-skills__item">
+                  <i class="ri-lightbulb-line"></i>
+                  <span>Créatif</span>
+               </div>
+               <div class="soft-skills__item">
+                  <i class="ri-user-voice-line"></i>
+                  <span>À l'écoute</span>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!--==================== VEILLE TECHNOLOGIQUE ====================-->
+      <section class="veille section" id="veille">
+         <h2 class="section__title">
+            <span>Veille</span>
+            <br> Technologique
+         </h2>
+
+         <div class="veille__container container grid">
+            <article class="veille__card">
+               <div class="veille__icon">
+                  <i class="ri-robot-2-line"></i>
+               </div>
+               <h3 class="veille__title">Intelligence Artificielle</h3>
+               <p class="veille__description">
+                  Suivi des avancées en IA générative, modèles de langage (LLM) comme Llama 3,
+                  et leur intégration dans les solutions d'entreprise. Exploration des outils
+                  d'automatisation intelligente.
+               </p>
+            </article>
+
+            <article class="veille__card">
+               <div class="veille__icon">
+                  <i class="ri-shield-check-line"></i>
+               </div>
+               <h3 class="veille__title">Cybersécurité</h3>
+               <p class="veille__description">
+                  Veille sur les menaces émergentes, les bonnes pratiques de sécurité,
+                  la protection des données (RGPD) et les techniques de sécurisation
+                  des infrastructures réseau.
+               </p>
+            </article>
+
+            <article class="veille__card">
+               <div class="veille__icon">
+                  <i class="ri-cloud-line"></i>
+               </div>
+               <h3 class="veille__title">Cloud & DevOps</h3>
+               <p class="veille__description">
+                  Exploration des technologies cloud, containerisation avec Docker,
+                  orchestration avec Portainer, et outils d'automatisation comme n8n
+                  pour les workflows.
+               </p>
+            </article>
+
+            <article class="veille__card">
+               <div class="veille__icon">
+                  <i class="ri-terminal-box-line"></i>
+               </div>
+               <h3 class="veille__title">Développement Web</h3>
+               <p class="veille__description">
+                  Suivi des dernières tendances en développement web, nouveaux frameworks,
+                  bonnes pratiques de code et évolutions des standards du web.
+               </p>
+            </article>
+         </div>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+         <h2 class="section__title">Contactez-moi</h2>
+
+         <div class="contact__container container grid">
+            <div class="contact__description">
+               <p>Parlons de votre prochain projet.</p>
+            </div>
+
+            <div class="contact__content grid">
+               <div class="contact__box">
+                  <h3 class="contact__title">
+                     <i class="ri-mail-line"></i> Email
+                  </h3>
+                  <p class="contact__address">mael.lecomte1@gmail.com</p>
+               </div>
+
+               <div class="contact__box">
+                  <h3 class="contact__title">
+                     <i class="ri-map-pin-line"></i> Localisation
+                  </h3>
+                  <p class="contact__address">Angers, France</p>
+               </div>
+
+               <div class="contact__box">
+                  <h3 class="contact__title">
+                     <i class="ri-links-line"></i> Réseaux
+                  </h3>
+                  <div class="contact__social">
+                     <a href="https://www.linkedin.com/in/maellecomte/" target="_blank" rel="noopener noreferrer" class="contact__link">
+                        <i class="ri-linkedin-box-fill"></i> LinkedIn
+                     </a>
+                     <a href="https://github.com/maellecomte" target="_blank" rel="noopener noreferrer" class="contact__link">
+                        <i class="ri-github-fill"></i> GitHub
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+
+   <footer class="footer grid">
+      <p class="footer__copy">
+         Tous droits réservés par <span>Mael Lecomte</span>
+      </p>
+      <p class="footer__year">&#169; <span id="year"></span></p>
+   </footer>
+
+   <div id="project-modal" class="project-modal" aria-hidden="true" role="dialog" aria-modal="true"
+      aria-labelledby="project-modal-heading">
+      <div class="project-modal__backdrop" data-project-modal-close tabindex="-1"></div>
+      <div class="project-modal__panel">
+         <button type="button" class="project-modal__close" data-project-modal-close aria-label="Fermer la fenêtre">
+            <i class="ri-close-line" aria-hidden="true"></i>
+         </button>
+         <p class="project-modal__category" id="project-modal-category"></p>
+         <h2 class="project-modal__heading" id="project-modal-heading"></h2>
+         <p class="project-modal__tech-label">Technologies &amp; compétences</p>
+         <p class="project-modal__tech" id="project-modal-tech"></p>
+         <div class="project-modal__body" id="project-modal-body"></div>
+      </div>
+   </div>
+
+   <script src="assets/js/scrollreveal.min.js"></script>
+   <script src="assets/js/main.js"></script>
+</body>
+</html>
