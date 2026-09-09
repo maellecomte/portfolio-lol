@@ -49,6 +49,7 @@ const closeProjectModal = () => {
    if (!projectModal || !projectModal.classList.contains('is-open')) return;
    projectModal.classList.remove('is-open');
    projectModal.setAttribute('aria-hidden', 'true');
+   document.documentElement.classList.remove('modal-open');
    document.body.classList.remove('modal-open');
    if (projectModalBody) projectModalBody.innerHTML = '';
 
@@ -73,6 +74,7 @@ const openProjectModal = (card) => {
 
    projectModal.classList.add('is-open');
    projectModal.setAttribute('aria-hidden', 'false');
+   document.documentElement.classList.add('modal-open');
    document.body.classList.add('modal-open');
 
    const closeBtn = projectModal.querySelector('.project-modal__close');
